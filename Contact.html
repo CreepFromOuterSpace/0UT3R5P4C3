@@ -21,20 +21,28 @@
 <div>
 <span style="color: #080f13">spooky</span>
 </div>
-
+<div>
+<span style="color: #080f13 ">space</span>
+</div>
 
 <div>
 <marquee scrollamount="10"  class="blink_text">0UT3R 5P4C3 STILL A WORK IN PROGRESS!!! </marquee>
 </div>
 
 <div>
-<img src="/Pictures/min.svg" class="center"
+<img src="/Pictures/MainLogo.svg" class="center"
 	 style="object-fit:cover;
      		object-position: center;
-            width:400px;
+            width:200px;
             height:auto; "/>
 </div>
 
+<div>
+<span style="color: #080f13">spooky</span>
+</div>
+<div>
+<span style="color: #080f13 ">space</span>
+</div>
 
 <div>
 <p>
@@ -46,13 +54,6 @@
 <div>
 <p>
 	<span style="color: #9900ff; font-variant: normal;">&gt;&gt;&gt; </span><span style="color: #ff00ff; font-variant: normal;">MESSAGE</span><span style="color: #9900ff; font-variant: normal;">: "</span><span style="color: #4a86e8; font-variant: normal;">Enjoy your stay.</span><span style="color: #9900ff; font-variant: normal;">"</span>
-</p>
-</div>
-
-
-<div>
-<p>
-	<span style="color: #9900ff; font-variant: normal;">&gt;&gt;&gt; </span><span style="color: #ff00ff; font-variant: normal;">LOCAL TIME</span><span style="color: #9900ff; font-variant: normal;">: "</span><span style="color: #4a86e8;" id="time"></span><span style="color: #9900ff; font-variant: normal;">"</span>
 </p>
 </div>
 
@@ -89,8 +90,7 @@
 
 <div class="footer">
 
-<span>| Vaibhav R. &copy; 2022-2023 | <a href="https://github.com/CreepFromOuterSpace" style="color:#080f13;">Github</a> | <a href="mailto:creepfromouterspace@gmail.com" style="color:#080f13;">Email</a> </span>
-<span style="color:#080f13;">| <a href="/Pictures/bitcoin-barcode.png" style="color:#080f13;">Bitcoin: bc1qwnv5ahj5rularzfx49pcltxdrjetewzzj7daae</a> |<span>
+<span>Vaibhav R. &copy; 2022-2023 | <a href="https://github.com/CreepFromOuterSpace" style="color:#080f13;">Github</a> | <a href="mailto:creepfromouterspace@gmail.com" style="color:#080f13;">Email</a> </span>
 
 
 </div>
@@ -104,6 +104,7 @@
 
 </html>
 <style>
+body {margin:0;}
 
 .navbar {
   overflow: hidden;
@@ -121,7 +122,7 @@
   padding: 2px 2px 2px 2px;
   text-decoration-line: overline;
   font-size: 10px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 .navbar a:hover {
@@ -213,17 +214,6 @@ body {
 
 </style>
 <script>
-
-`use strict`;
-function refreshTime() {
-  const timeDisplay = document.getElementById("time");
-  const dateString = new Date().toLocaleString();
-  const formattedString = dateString.replace(", ", ", ");
-  timeDisplay.textContent = formattedString;
-}
-  setInterval(refreshTime, 1000);
-
-
 class TextMixer {
   constructor(el) {
     this.el = el
