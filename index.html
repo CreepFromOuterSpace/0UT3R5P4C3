@@ -1,298 +1,442 @@
 <html>
-
-<div>
-<head>
-<title>0UT3R 5P4C3 </title>
-<link rel="icon" href="/Pictures/MainLogo.svg" type="svg">
-</head>
+<div class="stream"></div>
+<div class="line editline">
+   <p class="time"></p>
+   <p class="name">&gt;</p>
+   <p contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="information edit"></p>
 </div>
-<body>
-
-<div>
-<div class="navbar">
-  <a href="/Contact.html">Contact</a>
-  <a href="/Profile.html">Profile</a>
-  <a href="/Museum.html">Museum</a>
-  <a href="/Software.html">Software</a>
-  <a href="/index.html">Home</a>
-</div>
-</div>
-
-<div>
-<span style="color: #080f13">spooky</span>
-</div>
-
-
-<div>
-<marquee scrollamount="10"  class="blink_text">0UT3R 5P4C3 STILL A WORK IN PROGRESS!!! </marquee>
-</div>
-
-<div>
-<img src="/Pictures/min.svg" class="center"
-	 style="object-fit:cover;
-     		object-position: center;
-            width:400px;
-            height:auto; "/>
-</div>
-
-
-<div>
-<p>
-	<span style="color: #9900ff; font-variant: normal;">&gt;&gt;&gt; </span><span style="color: #ff00ff; font-variant: normal;">MESSAGE</span><span style="color: #9900ff; font-variant: normal;">: "</span><span style="color: #4a86e8; font-variant: normal;">Welcome to </span><span style="color: #ff9900;">0UT3R 5P4C3</span><span style="color: #4a86e8; font-variant: normal;">, written and mantained by </span><span style="color: #ff9900;">Vaibhav R.</span><span style="color: #9900ff; font-variant: normal;">"</span>
-</p>
-</div>
-
-
-<div>
-<p>
-	<span style="color: #9900ff; font-variant: normal;">&gt;&gt;&gt; </span><span style="color: #ff00ff; font-variant: normal;">MESSAGE</span><span style="color: #9900ff; font-variant: normal;">: "</span><span style="color: #4a86e8; font-variant: normal;">Enjoy your stay.</span><span style="color: #9900ff; font-variant: normal;">"</span>
-</p>
-</div>
-
-
-<div>
-<p>
-	<span style="color: #9900ff; font-variant: normal;">&gt;&gt;&gt; </span><span style="color: #ff00ff; font-variant: normal;">LOCAL TIME</span><span style="color: #9900ff; font-variant: normal;">: "</span><span style="color: #4a86e8;" id="time"></span><span style="color: #9900ff; font-variant: normal;">"</span>
-</p>
-</div>
-
-
-
-<div>
-<span style="color: #080f13 ">space</span>
-</div>
-
-
-
-<div>
-<p>   
- <span style="color: #ff9900;">&gt;&gt;&gt;</span><span style="color: #ff00ff; font-variant: normal;"> LINK</span><span style="color: #9900ff; font-variant: normal;">:<span class="blink_text"> Home <em>[Current Destination] </em> </span>
-</p>
-</div>
-
-
-<div>
-<p>
-<span style="color: #9900ff;">&gt;&gt;&gt; </span><a href="/Profile.html" style="color:#ff9900;">Profile</a>
-</p>
-</div>
-
-
-
-<div>
-<span style="color: #080f13 ">space</span>
-</div>
-
-<div>
-<span style="color: #080f13">space</span>
-</div>
-
-<div class="footer">
-
-<span>| Vaibhav R. &copy; 2022-2023 | <a href="https://github.com/CreepFromOuterSpace" style="color:#080f13;">Github</a> | <a href="mailto:creepfromouterspace@gmail.com" style="color:#080f13;">Email</a> </span>
-<span style="color:#080f13;">| <a href="/Pictures/bitcoin-barcode.png" style="color:#080f13;">Bitcoin: bc1qwnv5ahj5rularzfx49pcltxdrjetewzzj7daae</a> |<span>
-
-
-</div>
-
-
-<div>
-
-</div>
-
-</body>
-
 </html>
 <style>
-
-.navbar {
-  overflow: hidden;
-  background-color: #4a86e8;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: right;
-  display: block;
-  color: #080f13;
-  text-align: center;
-  padding: 2px 2px 2px 2px;
-  text-decoration-line: overline;
-  font-size: 10px;
-  margin-right: 10px;
-}
-
-.navbar a:hover {
-  background: #080f13;
-  color: #4a86e8;
-}
-
-
-
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #4a86e8;
-  color: #080f13;
-  text-align:right;
-  padding: 2px 2px 2px 2px;
-  font-size: 10px;
-}
-
-
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-
-p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 150px;
-  margin-left: 150px;
-}
-
-
-@import 'https://fonts.googleapis.com/css2?family=Space+Mono&display=swap';
-html,
 body {
-  font-family: 'Space Mono', monospace;
-  background: #080f13;
-  height: 100%;
-  font-size:13;
+	 background-color: #3a3a3a;
+	 color: #efefae;
+	 font-family: 'Fira Mono', Monospace;
+	 margin: 0;
+	 overflow-x: hidden;
 }
-
-.container {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+ body a {
+	 color: inherit;
 }
-.text {
-  font-weight: 600;
-  font-size: 44px;
-  color: #9900ff;
+ body a:hover {
+	 color: #ffffae;
+	 background-color: #005f5f;
 }
-.dud {
-  color: #ff00ff;
+ body .stream {
+	 margin-top: 8px;
 }
-body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+ body .line {
+	 margin: 0;
+	 padding: 0;
+	 display: flex;
+	 flex-direction: row;
+	 margin: 0 4px;
+	 padding-top: 2px;
+	 width: calc(100% - 12px);
 }
-body {
-  font-family: 'Space Mono', monospace;
-  background: #080f13;
-  height: 100%;
+ body .line p {
+	 display: inline-block;
+	 margin: 0;
+	 padding: 0;
 }
-.blink_text {
- animation-name: blinker;
- animation-duration: 1s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
- font-weight: 400;
- font-size: 13px;
- color: #4a86e8;
+ body .line .name {
+	 max-width: 80px;
+	 min-width: 80px;
+	 text-align: right;
+	 padding-right: 6px;
 }
-
-@keyframes blinker {  
- 0% { opacity: 1.0; }
- 50% { opacity: 0.0; }
- 100% { opacity: 1.0; }
+ body .editline {
+	 background-color: #262626;
+	 padding: 2px 4px 0px 4px;
+	 width: calc(100%);
+	 margin: 0;
+	 margin-bottom: 8px;
 }
-
-
+ body .editline .edit {
+	 min-width: calc(100% - 200px);
+	 outline: none;
+}
+ body .editline .time {
+	 user-select: none;
+	 cursor: default;
+}
+ .whitet {
+	 color: #ffffae;
+}
+ .redt {
+	 color: #d75f5f;
+}
+ .important {
+	 color: #e3a786;
+}
+ .bluet {
+	 color: #5f8787;
+}
+ .greent {
+	 color: #afaf00;
+}
+ .selft {
+	 color: #83a598;
+}
+ ::selection {
+	 color: #ffffae;
+	 background: #005f5f;
+}
+ ::-webkit-scrollbar {
+	 background-color: #3a3a3a;
+	 width: 10px;
+	 height: 10px;
+}
+ ::-webkit-scrollbar-thumb {
+	 background-color: #bcbcbc;
+}
+ ::-webkit-scrollbar-corner {
+	 background-color: #3a3a3a;
+}
+ ::-webkit-resizer {
+	 background-color: #3a3a3a;
+}
+ .phjspenheader:hover {
+	 background-color: #d44c2a;
+}
 </style>
 <script>
+// JavaScript Document
+$(document).ready(function(e) {
+   /* Todo:
+ • Merge this with Node.js, almost done
+ • Webpages in a database/more editable version
+ • Add cookies to track previous commands? (You can press up and down to browse previous commands this session)
+*/
+   var faviconnumber = 1;
+	function favicon() {
+		favicon = favicon == 1 ? 2 : 1;
+		$('.favicon').attr('href','favicon' + favicon + ".png");
+	}
+   console.clear();
+   var commandlist = [ /*Can be populated with various methods*/
+      ["/help", "Show commands"],
+      ["/list", "List all pages on the website"],
+      ["/nav &lt;location&gt;", "Navigate to location"],
+	   ["/gl", "Generate a url for the current page - [^http://koya.io/](This doesn't work in an iframe, try it at *Koya.io*) outputs something like [^http://koya.io/connect](*koya.io/connect*)"],
+      ["/clear", "Clear the console"],
+      ["/login &lt;username&gt; &lt;password&gt;", "Login to your account - This is not set up and when implemeneted it'll be '/login username' then request password without printing into the cmd prompt"],
+      ["/upload", "Upload file, must be logged in."]
+   ];
+   var previouscommands = [];
+   var currentcommand = 0;
+   var pages = [ /*Can be populated with various methods*/
+      ["index", "Welcome to Koya.io", "Simply, this is just a sandbox in which to add to; no real point - a couple of features that I plan to add though:", "URL shortner and open tracker, just enter a URL into the command line and press enter and you will get 2 links - 1 which looks like [http://koya.io/XXXXXX](http://koya.io/XXXXXX) and another [http://koya.io/u/XXXXXX](http://koya.io/u/XXXXXX) : they will both forward but the second will show a preview of the full url so they know where you are going.", "You can also save small messages with `/msg <string <160 chars>` and you will get a url like [http://koya.io/XXXXXX](http://koya.io/XXXXXX)","Pressing Ctrl+v will paste the short text or image and you will get a link.", "There will be accounts but likely given out rather than being able to register them whenever, this is a personal site so idk."],
+      ["about", "About Koya.io", "Personal power website for Finn 'Koya' Shackleton.", "Will include some features which too are mainly for personal use: Link shortner, image host, pastebin and any sandbox testing", "The colours have been taken from [https://github.com/Poorchop/darktooth-theme-ports/tree/8c852e8edde8df57d831dc8631493b0565fadbbc/hexchat-darktooth](Poorchop's Darktooth HexChat theme)", "In the process of turning the website into a server sided thing, currently what you can read is in the [http://koya.io/scripts.js](JavaScript file)!"],
+	  ["connect", "Connect with Koya",
+	  "[mailto:_@koya.io](Email _@koya.io)",
+	  "[skype:finn.shackleton](Skype)",
+	  "[^http://steamcommunity.com/id/bananabutterscotchmaplepancakes](Steam) < Always available",
+	  "[^https://codepen.io/OfficialAntarctica](Codepen)",
+	  "[^http://everybodyedits.com/profiles/bbmp](Everybody Edits)"]
+   ];
+   var pageindex = ["index", "about", "connect"];
+   var currentpage = "landing";
+   var url = "http://koya.io/"
+      /*
+         Custom Text Syntax
+         Links:      
+            [URLPATH](NAME) - regular
+            [^URLPATH](NAME) - open in new tab
+            
+         Styles:
+            *TEXT* - bold text
+            E! - Text is an error/notification
+            A! - spaces are converted to non-breaking spaces (it's for ascii art - after all, this is a text based website)
+      */
 
-`use strict`;
-function refreshTime() {
-  const timeDisplay = document.getElementById("time");
-  const dateString = new Date().toLocaleString();
-  const formattedString = dateString.replace(", ", ", ");
-  timeDisplay.textContent = formattedString;
-}
-  setInterval(refreshTime, 1000);
+   function init() {
+      setInterval(time);
+      console.clear();
+      console.log(new Date().getTime());
+      log("Website", "A! _____ _____ __ __ _____ ");
+      log("Website", "A!|  |  |     |  |  |  _  |");
+      log("Website", "A!|    -|  |  |_   _|     |");
+      log("Website", "A!|__|__|_____| |_| |__|__|");
+      log("Website", '[^http://koya.io/](*Koya.io*)');
+      log("Website", "");
+      log("Website", "E!I'm no longer using this at [^http://koya.io/](*Koya.io*)");
+      log("Website", "");
+	  urlvars();
+      log("Client", "For help say '/help'");
+	  setInterval(favicon,500);
+   }
 
+   function urlvars() {
+	   var pagelocs = window.location.pathname.replace("/","").split("/");
+	   var pageloc = pagelocs[0];
+	   console.log(pageloc);
+	   //alert();
+		if(pageloc != "") {
+            if ($.inArray(pageloc, pageindex) >= 0) {
+               currentpage = pageloc;
+            }
+		}
+      	log("Website", "You are currently on page: *" + currentpage + "*");
+		if(pageloc != "") {
+            if ($.inArray(pageloc, pageindex) >= 0) {
+               currentpage = pageloc;
+               loadpage($.inArray(pageloc, pageindex));
+            } else {
+               //Un-note next line to show 404 errors with wrong urls
+               //log("Client", "404 - The page '" + pageloc + "' does not exist. To "); 
+            }
+		}
+		if(pageloc == "") {
+      		log("Client", "What would you like to access?");	
+		}
+   }
+   function getParam(name){
+		name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+		var regexS = "[\\?&]"+name+"=([^&#]*)";
+		var regex = new RegExp( regexS );
+		var results = regex.exec (window.location.href);
+		if (results == null) {
+			return "";
+		}
+		else  {
+			return results[1];
+		}
+	}
 
-class TextMixer {
-  constructor(el) {
-    this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
-    this.update = this.update.bind(this)
-  }
-  setText(newText) {
-    const oldText = this.el.innerText
-    const length = Math.max(oldText.length, newText.length)
-    const promise = new Promise((resolve) => this.resolve = resolve)
-    this.queue = []
-    for (let i = 0; i < length; i++) {
-      const from = oldText[i] || ''
-      const to = newText[i] || ''
-      const start = Math.floor(Math.random() * 40)
-      const end = start + Math.floor(Math.random() * 40)
-      this.queue.push({ from, to, start, end })
-    }
-    cancelAnimationFrame(this.frameRequest)
-    this.frame = 0
-    this.update()
-    return promise
-  }
-  update() {
-    let output = ''
-    let complete = 0
-    for (let i = 0, n = this.queue.length; i < n; i++) {
-      let { from, to, start, end, char } = this.queue[i]
-      if (this.frame >= end) {
-        complete++
-        output += to
-      } else if (this.frame >= start) {
-        if (!char || Math.random() < 0.28) {
-          char = this.randomChar()
-          this.queue[i].char = char
-        }
-        output += `<span class="dud">${char}</span>`
-      } else {
-        output += from
+   function log(name, information) {
+      var d = new Date();
+      var hours = ((d.getHours() < 10) ? "0" : "") + d.getHours();
+      var minutes = ((d.getMinutes() < 10) ? "0" : "") + d.getMinutes();
+      var seconds = ((d.getSeconds() < 10) ? "0" : "") + d.getSeconds();
+      var colour = "whitet";
+      var textcolour = "";
+      var postcolour = "";
+
+      switch (name[0]) {
+         case "!":
+            postcolour = " important";
+            name = name.substr(1);
+            break;
       }
-    }
-    this.el.innerHTML = output
-    if (complete === this.queue.length) {
-      this.resolve()
-    } else {
-      this.frameRequest = requestAnimationFrame(this.update)
-      this.frame++
-    }
-  }
-  randomChar() {
-    return this.chars[Math.floor(Math.random() * this.chars.length)]
-  }
-}
+      switch (name) {
+         case "Website":
+            colour = "redt";
+            break;
+         case "Server":
+            colour = "bluet";
+            break;
+         case "Client":
+            colour = "bluet";
+            break;
+         case "User":
+            colour = "greent";
+            postcolour = " selft";
+            break;
+      }
+      if (information[0] == "A" && information[1] == "!") {
+         information = information.substr(2);
+         information = information.replace(/ /g, '\u00A0');
+      }
+      if (information[0] == "E" && information[1] == "!") {
+         information = information.substr(2);
+         postcolour = " important";
+      }
 
-const phrases = [
-  'WELCOME TO 0UT3R 5P4C3', 
-  'ENJOY YOUR STAY',
-]
+      while (information.indexOf("](") >= 0) { //URL parser
 
-const el = document.querySelector('.text')
-const fx = new TextMixer(el)
+         var NAMEregExp = /\(([^)]+)\)/;
+         var uname = NAMEregExp.exec(information)[1];
 
-let counter = 0
-const next = () => {
-  fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 2000)
-  })
-  counter = (counter + 1) % phrases.length
-}
+         var URLregExp = /\[([^)]+)\]/;
+         var url = URLregExp.exec(information)[1];
+         var newpage = false;
+         if (url[0] == "^") {
+            newpage = true;
+            url = url.substr(1);
+         }
+         var start = information.indexOf("[");
+         var end = information.indexOf(")");
+         if (newpage) {
+            information = information.replace(information.substring(start, end + 1), "").splice(start, 0, '<a href="' + url + '" target="_blank">' + uname + '</a>');
+         } else {
+            information = information.replace(information.substring(start, end + 1), "").splice(start, 0, '<a href="' + url + '">' + uname + '</a>');
+         }
+         //information = '<a href="' + url + '">' + uname + '</a>'; //working
 
-next()
+      }
+      var tobold = true;
+      var boldnumber = 0;
+      for (var i = 0; i < information.length; i++) {
+         if (information[i] == "*" && information[i - 1] != "*" && information[i + 1] != "*") {
+            boldnumber++;
+         }
+      }
+      while (information.indexOf("*") >= 0) { //Bold parser
+         var pos = information.indexOf("*");
+         information = information.replace("*", "");
+         if (tobold) {
+            information = information.splice(pos, 0, '<b>');
+         } else {
+            information = information.splice(pos, 0, '</b>');
+         }
+         tobold = !tobold;
+         if (tobold && boldnumber <= 1) {
+            break;
+         }
+         //information = '<a href="' + url + '">' + uname + '</a>'; //working
+      }
+      var tounderline = true;
+      var underlinenumber = 0;
+      for (var i = 0; i < information.length; i++) {
+         if (information[i] == "*" && information[i - 1] != "*" && information[i + 1] != "*") {
+            underlinenumber++;
+         }
+      }
+      while (information.indexOf("**") >= 0) { //Bold parser
+         var pos = information.indexOf("**");
+         information = information.replace("**", "");
+         if (tounderline) {
+            information = information.splice(pos, 0, '<u>');
+         } else {
+            information = information.splice(pos, 0, '</u>');
+         }
+         tounderline = !tounderline;
+         if (tounderline && underlinenumber <= 1) {
+            break;
+         }
+         //information = '<a href="' + url + '">' + uname + '</a>'; //working
+      } /**/
+      $(".stream").append('<div class="line">' +
+         '<p class="time">[' + hours + ":" + minutes + ":" + seconds + ']</p>' +
+         '<p class="name ' + colour + '">' + name + '</p>' +
+         '<p class="information' + postcolour + '">' + information + '</p>' +
+         '</div>');
+      $(document).scrollTop($(document).height() - $(window).height());
+   }
+	var timestring = "";
+   function time() {
+      var d = new Date();
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      var seconds = d.getSeconds();
+      if (hours < 10) {
+         hours = "0" + hours;
+      }
+      if (minutes < 10) {
+         minutes = "0" + minutes;
+      }
+      if (seconds < 10) {
+         seconds = "0" + seconds;
+      }
+	  var temptimestring = "[" + hours + ":" + minutes + ":" + seconds + "]";
+	  if (temptimestring != timestring) {
+		  timestring = temptimestring;
+      	$(".editline .time").text(timestring);
+	  }
+   }
+
+   var ctrldown = false;
+   $(".editline .edit").keydown(function(e) {
+      var text = $(".editline .edit").text();
+      console.log(e.which);
+      if (e.which == 13 && text !== "" && !ctrldown) {
+         var commands = text.split(' ');
+         var output = "";
+         if (commands[0] == "help") {
+            text = "/" + text;
+         }
+         $(".editline .edit").text("");
+         log("User", text);
+
+         previouscommands[currentcommand] = text;
+         currentcommand = previouscommands.length;
+         $(".editline .edit").keydown(35);
+         cmd(commands[0], text, commands);
+         /*Add mod commands*/
+         //modcmd(commands[0], text, commands);
+         /*Add mod commands*/
+
+      }
+      if (e.which == 38) { //up
+         if (currentcommand > 0) {
+            currentcommand--;
+            $(".editline .edit").text(previouscommands[currentcommand]);
+         }
+      }
+      if (e.which == 40) { //down
+
+         if (currentcommand < previouscommands.length) {
+            currentcommand++;
+            $(".editline .edit").text(previouscommands[currentcommand]);
+         }
+      }
+   });
+
+   function cmd(command, words, word) {
+      switch (word[0]) {
+         case "/help":
+         case "help":
+            for (var i = 0; i < commandlist.length; i++) {
+               output = commandlist[i][0] + " : " + commandlist[i][1];
+               //console.log(command[i][0]);
+               log("Client", output);
+            }
+            break;
+		 case "/gl":
+			//window.location.href = "http://koya.io" + (currentpage == "landing" ? "" : "/" + currentpage);
+			window.history.pushState(currentpage, 'InpagePage', (currentpage == "landing" ? "/" : "/" + currentpage));
+			break;
+         case "/clear":
+            $(".stream").text("");
+            break;
+         case "/nav":
+            if ($.inArray(word[1], pageindex) >= 0) {
+               currentpage = word[1];
+               log("Website", "You are now in " + currentpage);
+               loadpage($.inArray(word[1], pageindex));
+            } else {
+               log("Client", "'" + word[1] + "' does not exist.");
+            }
+            break;
+         case "/list":
+            $.each(pageindex, function(id, content) {
+               log("Client", "> " + content);
+            });
+            break;
+         case "/login":
+            if (word.length >= 3) {
+               log("Client", "Attempting to login to " + word[1] + " with " + Array(word[2].length + 1).join("â€¢"));
+               loginreturn = false;
+               //log("Client", "ER1");
+               setTimeout(loginemptyreturn, 20000);
+            } else {
+               log("Client", "Not enough arguments to log in, you need a USERNAME and a PASSWORD.");
+            }
+            break;
+         default:
+            output = "Unrecognised command '" + word[0] + "'.";
+            log("Client", output);
+      }
+   }
+
+   function loadpage(i) {
+      $.each(pages[i], function(id, content) {
+         if (content != pageindex[i]) {
+            log("Website", content);
+         }
+      });
+   }
+   var loginreturn = false;
+
+   function loginemptyreturn() {
+      //log("Client", "ER2");
+      if (!loginreturn) {
+         log("Client", "E![LOGIN] No Return Recieved");
+      }
+   }
+   String.prototype.splice = function(idx, rem, str) {
+      return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+   };
+   init();
+});
 </script>
